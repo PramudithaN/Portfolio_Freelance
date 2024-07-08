@@ -73,7 +73,7 @@ const Manipulations: React.FC = () => {
         <div className="manipulations-container">
             {loading && (
                 <div className="spinner-container">
-                    <div className="spinner"></div>
+                    <div className="spinner-manipulations"></div>
                 </div>
             )}
             <button className="back-button" onClick={() => navigate("/")}>
