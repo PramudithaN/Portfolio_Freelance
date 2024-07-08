@@ -14,7 +14,7 @@ const Home: React.FC = () => {
             <div className="card" onClick={() => navigate("/manipulations")}>
                 {!imageLoaded && <div className="loading-indicator">Loading...</div>}
                 <img
-                    src="/Images/Traven_1.jpg"
+                    src="https://7rouaftcqgovbqs4.public.blob.vercel-storage.com/Last%20Day%20of%20School-xDAedHHijj8cudDm1inUj4zu8Dqu50.jpg"
                     className="card-image"
                     alt="Manipulations"
                     onLoad={handleImageLoad} // Call handleImageLoad when image is loaded
@@ -27,7 +27,7 @@ const Home: React.FC = () => {
             <div className="card" onClick={() => navigate("/flyers")}>
                 {!imageLoaded && <div className="loading-indicator">Loading...</div>}
                 <img
-                    src="/Images/F-Hellcat.jpg"
+                    src="https://7rouaftcqgovbqs4.public.blob.vercel-storage.com/F-Hellcat-xJCUuOJe6mFH0COBnPZVrJcm3byM04.jpg"
                     className="card-image"
                     alt="Flyers"
                     onLoad={handleImageLoad} // Call handleImageLoad when image is loaded
