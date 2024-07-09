@@ -1,378 +1,378 @@
 .App {
-  text-align: center;
+	text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+	height: 40vmin;
+	pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: #111111;
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: #111111;
 }
 
 .App-link {
-  color: #61dafb;
+	color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
 /* General Styles */
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #111111;
-  color: white;
-  overflow: hidden; /* Hide vertical and horizontal scrollbars */
-  scrollbar-width: none; /* Hide scrollbar for Firefox */
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: #111111;
+	color: white;
+	overflow: hidden; /* Hide vertical and horizontal scrollbars */
+	scrollbar-width: none; /* Hide scrollbar for Firefox */
 }
 
 body::-webkit-scrollbar {
-  display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+	display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
 }
 
 body::-webkit-scrollbar-horizontal {
-  display: none; /* Hide horizontal scrollbar for Chrome, Safari, and Opera */
+	display: none; /* Hide horizontal scrollbar for Chrome, Safari, and Opera */
 }
-
 
 /* Stylish Scrollbar Styles for browsers that support it */
 ::-webkit-scrollbar {
-  width: 12px;
+	width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #111111;
+	background: #111111;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #444;
-  border-radius: 6px;
-  border: 3px solid #111111;
+	background-color: #444;
+	border-radius: 6px;
+	border: 3px solid #111111;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #555;
+	background-color: #555;
 }
 
 /* NAVAR---------------------------------------------------------------------------- */
 
-/* src/Components/Navbar.css */
-
 .navbar {
-  background-color: #111111; /* Dark gray background */
-  display: flex;
-  justify-content: flex-end; /* Align items to the top right */
-  padding: 10px;
-  padding-top: 30px;
+	background-color: #111111; /* Dark gray background */
+	display: flex;
+	justify-content: flex-end; /* Align items to the top right */
+	padding: 10px;
+	padding-top: 30px;
 }
 
 .navbar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
 .navbar ul li {
-  display: inline-block;
-  margin-right: 10px;
+	display: inline-block;
+	margin-right: 10px;
 }
 
 .navbar ul li a {
-  color: white;
-  text-decoration: none;
-  padding: 5px 10px;
+	color: white;
+	text-decoration: none;
+	padding: 5px 10px;
 }
 
 .navbar ul li a:hover {
-  background-color: #555; /* Darker gray on hover */
-  border-radius: 10px;
+	background-color: #555; /* Darker gray on hover */
+	border-radius: 10px;
 }
 
-
+.navbar ul li a.active {
+	color: #70fb61; /* Highlight color for active tab */
+	/* color: black; */
+	border-radius: 10px;
+}
 
 /* HOME----------------------------------------------------------------------------  */
 
 .home-container {
-  background-color: #111111; /* Dark gray background */
-  min-height: 100vh; /* Full viewport height */
-  display: flex;
-  flex-wrap: wrap; /* Allow cards to wrap onto the next line */
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  padding-top: -120px; /* To avoid overlap with the navbar */
-  overflow-y: auto; /* Enable vertical scrolling */
-  padding-bottom: 2rem; /* Add bottom padding to ensure space for scrollbar */
+	background-color: #111111; /* Dark gray background */
+	min-height: 100vh; /* Full viewport height */
+	display: flex;
+	flex-wrap: wrap; /* Allow cards to wrap onto the next line */
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	padding-top: -120px; /* To avoid overlap with the navbar */
+	overflow-y: auto; /* Enable vertical scrolling */
+	padding-bottom: 2rem; /* Add bottom padding to ensure space for scrollbar */
 }
 
 .card {
-  width: 800px;
-  max-width: 100%; /* Ensure cards don't exceed viewport width */
-  height: 600px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 8px;
-  cursor: pointer;
-  margin-bottom: 2rem; /* Space between cards */
+	width: 600px;
+	max-width: 100%; /* Ensure cards don't exceed viewport width */
+	height: 500px;
+	position: relative;
+	overflow: hidden;
+	border-radius: 8px;
+	cursor: pointer;
+	margin-bottom: 2rem; /* Space between cards */
 }
 
 .card-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: filter 0.3s ease; /* Smooth transition for filter change */
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: filter 0.3s ease; /* Smooth transition for filter change */
 }
 
 .card-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  opacity: 0;
-  transition: opacity 0.3s ease; /* Smooth transition for opacity change */
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	opacity: 0;
+	transition: opacity 0.3s ease; /* Smooth transition for opacity change */
 }
 
 .card:hover .card-image {
-  filter: blur(5px); /* Blur the background image on hover */
+	filter: blur(5px); /* Blur the background image on hover */
 }
 
 .card:hover .card-overlay {
-  opacity: 1; /* Show overlay on hover */
+	opacity: 1; /* Show overlay on hover */
 }
 
 .card-title {
-  color: white;
-  font-size: 30px;
-  font-weight: 600;
-  z-index: 1; /* Ensure title is above overlay */
+	color: white;
+	font-size: 30px;
+	font-weight: 600;
+	z-index: 1; /* Ensure title is above overlay */
 }
 
 @media (max-width: 768px) {
-  .home-container {
-    flex-direction: column; /* Stack cards vertically */
-    align-items: stretch; /* Stretch cards to full width */
-  }
-  
-  .card {
-    width: calc(100% - 2rem); /* Full width with some padding or margin */
-    margin-bottom: 1rem; /* Adjust margin or padding between stacked cards */
-  }
-}
+	.home-container {
+		flex-direction: column; /* Stack cards vertically */
+		align-items: stretch; /* Stretch cards to full width */
+	}
 
+	.card {
+		width: calc(100% - 2rem); /* Full width with some padding or margin */
+		margin-bottom: 1rem; /* Adjust margin or padding between stacked cards */
+	}
+}
 
 /* CONTACT US ----------------------------------------------------------------------------  */
 
-
 .contact-us-container {
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-  background-color: #111111;
-  color: white;
-  padding: 120px 780px;
-  margin: 0 auto;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	background-color: #111111;
+	color: white;
+	padding: 50px 530px;
+	margin: 0 auto;
+	text-align: center;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .contact-us-container h1 {
-  margin-bottom: 30px;
-  font-size: 2rem;
-  font-weight: bold;
+	margin-bottom: 30px;
+	font-size: 2rem;
+	font-weight: bold;
 }
 
 .contact-form {
-  max-width: 600px;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+	/* min-width: 900px; */
+	width: 500px;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
 }
 
 .contact-form label {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  font-size: 1rem;
-  font-weight: bold;
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	font-size: 1rem;
+	font-weight: bold;
 }
 
 .contact-form input,
 .contact-form textarea {
-  background-color: #333;
-  color: white;
-  border: 1px solid #555;
-  padding: 10px;
-  border-radius: 4px;
-  margin-top: 5px;
-  font-size: 1rem;
+	background-color: #333;
+	color: white;
+	border: 1px solid #555;
+	padding: 10px;
+	border-radius: 4px;
+	margin-top: 5px;
+	font-size: 1rem;
 }
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
-  color: #aaa;
+	color: #aaa;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-color: #61dafb;
-  outline: none;
+	border-color: #61dafb;
+	outline: none;
 }
 
 .contact-form button {
-  background-color: #61dafb;
-  color: black;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 1rem;
-  font-weight: bold;
-  transition: background-color 0.3s ease, color 0.3s ease;
+	background-color: #70fb61;
+	color: black;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 1rem;
+	font-weight: bold;
+	transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .contact-form button:hover {
-  background-color: #333;
-  color: white;
+	background-color: #333;
+	color: white;
 }
 
 /* Ensure the page does not show the scrollbar */
 body {
-  overflow: hidden;
+	overflow: hidden;
 }
 
 /* MANIPULATIONS-------------------------------------------------------------------- */
 
 .manipulations-container {
-  background-color: #111111;
-  height: 100vh;
-  color: white;
-  padding: 40px 20px;
-  text-align: center;
-  overflow-y: scroll;
+	background-color: #111111;
+	height: 100vh;
+	color: white;
+	padding: 40px 20px;
+	text-align: center;
+	overflow-y: scroll;
 }
 
 /* Stylish Scrollbar for the manipulations-container */
 .manipulations-container::-webkit-scrollbar {
-  width: 12px;
+	width: 12px;
 }
 
 .manipulations-container::-webkit-scrollbar-track {
-  background: #111111;
+	background: #111111;
 }
 
 .manipulations-container::-webkit-scrollbar-thumb {
-  background-color: #444;
-  border-radius: 6px;
-  border: 3px solid #111111;
+	background-color: #444;
+	border-radius: 6px;
+	border: 3px solid #111111;
 }
 
 .manipulations-container::-webkit-scrollbar-thumb:hover {
-  background-color: #555;
+	background-color: #555;
 }
 
 /* Stylish Scrollbar for Firefox */
 .manipulations-container {
-  scrollbar-width: thin;
-  scrollbar-color: #444 #111111;
+	scrollbar-width: thin;
+	scrollbar-color: #444 #111111;
 }
 
 /* Hide horizontal scrollbar */
 .manipulations-container::-webkit-scrollbar-horizontal {
-  display: none;
+	display: none;
 }
 
-
 .back-button {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  background: none;
-  border: none;
-  color: white;
-  font-size: 2rem;
-  cursor: pointer;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	background: none;
+	border: none;
+	color: white;
+	font-size: 2rem;
+	cursor: pointer;
 }
 
 .back-button:hover {
-  color: #00ec6a;
+	color: #00ec6a;
 }
 
-
 .manipulations-container h1 {
-  margin-bottom: 30px;
-  font-size: 2rem;
-  font-weight: bold;
-  gap:2px;
+	margin-bottom: 30px;
+	font-size: 2rem;
+	font-weight: bold;
+	gap: 2px;
 }
 
 .gallery {
-  column-count: 4; /* Number of columns in the masonry layout */
-  column-gap: 200; /* Remove gaps between columns */
-  gap:10px;
+	column-count: 4; /* Number of columns in the masonry layout */
+	column-gap: 200; /* Remove gaps between columns */
+	gap: 10px;
 }
 
 .gallery-item {
-  break-inside: avoid; /* Prevents the item from breaking inside the column */
-  margin-bottom: 10px; /* Remove gaps between items */
-  overflow: hidden;
-  /* border-radius: 8px; */
+	break-inside: avoid; /* Prevents the item from breaking inside the column */
+	margin-bottom: 10px; /* Remove gaps between items */
+	overflow: hidden;
+	/* border-radius: 8px; */
 }
 
 .gallery-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures the image covers the entire area */
-  display: block;
-  transition: transform 0.3s ease;
+	width: 100%;
+	height: 100%;
+	object-fit: cover; /* Ensures the image covers the entire area */
+	display: block;
+	transition: transform 0.3s ease;
 }
 .gallery-item img:hover {
-  transform: scale(1.05);
+	transform: scale(1.05);
 }
 
 @media (max-width: 1200px) {
-  .gallery {
-    column-count: 3; /* Adjust columns for medium screens */
-  }
+	.gallery {
+		column-count: 3; /* Adjust columns for medium screens */
+	}
 }
 
 @media (max-width: 800px) {
-  .gallery {
-    column-count: 2; /* Adjust columns for small screens */
-  }
+	.gallery {
+		column-count: 2; /* Adjust columns for small screens */
+	}
 }
 
 @media (max-width: 500px) {
-  .gallery {
-    column-count: 1; /* Adjust columns for very small screens */
-  }
+	.gallery {
+		column-count: 1; /* Adjust columns for very small screens */
+	}
 }
 
 /* LOADING-------------------------------------------------------- */
@@ -408,41 +408,41 @@ body {
 
 /* CSS for the spinner animation */
 @keyframes spin {
-  0% {
-      transform: rotate(0deg);
-  }
-  100% {
-      transform: rotate(360deg);
-  }
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }
 
 .spinner-manipulations {
-  border: 4px solid rgba(0, 0, 0, 0.1);
-  border-top: 4px solid #3498db; /* Blue color for the spinner */
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  animation: spin 1s linear infinite; /* Apply the spin animation */
-  margin: 20px auto; /* Center the spinner */
+	border: 4px solid rgba(0, 0, 0, 0.1);
+	border-top: 4px solid #3498db; /* Blue color for the spinner */
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	animation: spin 1s linear infinite; /* Apply the spin animation */
+	margin: 20px auto; /* Center the spinner */
 }
 
 /* SPINNER------------------------------------------------------------------------------- */
 
 .spinner {
-  border: 4px solid rgba(0, 0, 0, 0.1);
-  border-top: 4px solid #3498db; /* Blue color for the spinner */
-  border-radius: 50%;
-  width: 40px;
-  height: 150px;
-  animation: spin 1s linear infinite; /* Apply the spin animation */
-  margin: 20px auto; /* Center the spinner */
+	border: 4px solid rgba(0, 0, 0, 0.1);
+	border-top: 4px solid #3498db; /* Blue color for the spinner */
+	border-radius: 50%;
+	width: 40px;
+	height: 150px;
+	animation: spin 1s linear infinite; /* Apply the spin animation */
+	margin: 20px auto; /* Center the spinner */
 }
 
 @keyframes spin {
-  0% {
-      transform: rotate(0deg);
-  }
-  100% {
-      transform: rotate(360deg);
-  }
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }
