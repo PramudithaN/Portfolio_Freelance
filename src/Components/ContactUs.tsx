@@ -24,8 +24,8 @@ const ContactUs: React.FC = () => {
 
 	return (
 		<div className="contact-us-container">
-			<h1>Contact</h1>
 			<form onSubmit={handleSubmit} className="contact-form">
+			<h1 >Contact</h1>
 				<label>
 					Name *
 					<input

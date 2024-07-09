@@ -131,7 +131,7 @@ body::-webkit-scrollbar-horizontal {
 }
 
 .card {
-	width: 600px;
+	width: 650px;
 	max-width: 100%; /* Ensure cards don't exceed viewport width */
 	height: 500px;
 	position: relative;
@@ -193,22 +193,24 @@ body::-webkit-scrollbar-horizontal {
 /* CONTACT US ----------------------------------------------------------------------------  */
 
 .contact-us-container {
-	height: 100vh;
+	/* height: 100vh; */
 	justify-content: center;
 	align-items: center;
 	background-color: #111111;
 	color: white;
-	padding: 50px 530px;
+  display: flex;
+	/* padding: 50px 530px; */
 	margin: 0 auto;
 	text-align: center;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .contact-us-container h1 {
-	margin-bottom: 30px;
+	margin-bottom: 4px;
 	font-size: 2rem;
 	font-weight: bold;
 }
+
 
 .contact-form {
 	/* min-width: 900px; */
@@ -429,13 +431,14 @@ body {
 /* SPINNER------------------------------------------------------------------------------- */
 
 .spinner {
+  /* margin-top: 200px; */
 	border: 4px solid rgba(0, 0, 0, 0.1);
 	border-top: 4px solid #3498db; /* Blue color for the spinner */
 	border-radius: 50%;
 	width: 40px;
-	height: 150px;
+	height: 40px;
 	animation: spin 1s linear infinite; /* Apply the spin animation */
-	margin: 20px auto; /* Center the spinner */
+	margin: 180px auto; /*Center the spinner*/
 }
 
 @keyframes spin {
