@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Spinner from "./Spinner";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook, faTwitter, faInstagram, faLinkedinIn, faXTwitter } from "@fortawesome/free-brands-svg-icons";
 
 const Home: React.FC = () => {
 	const navigate = useNavigate();
 	const [imageLoaded, setImageLoaded] = useState(false);
+
 	const handleImageLoad = () => {
 		setImageLoaded(true);
 	};
@@ -37,6 +40,20 @@ const Home: React.FC = () => {
 				<div className="card-overlay">
 					<div className="card-title">FLYERS</div>
 				</div>
+			</div>
+			<div className="social-media-icons">
+				<a href="https://web.facebook.com/profile.php?id=100009277186306" target="_blank" rel="noopener noreferrer">
+					<FontAwesomeIcon icon={faFacebook} size="2x" />
+				</a>
+				<a href="https://twitter.com/Prama_psd" target="_blank" rel="noopener noreferrer">
+					<FontAwesomeIcon icon={faXTwitter} size="2x" />
+				</a>
+				<a href="https://www.instagram.com/ad0be_prama?igsh=dHJrMHNmajRmNjJz" target="_blank" rel="noopener noreferrer">
+					<FontAwesomeIcon icon={faInstagram} size="2x" />
+				</a>
+                <a href="https://www.linkedin.com/in/pramuditha-nadun-612b1b204/" target="_blank" rel="noopener noreferrer">
+					<FontAwesomeIcon icon={faLinkedinIn} size="2x" />
+				</a>
 			</div>
 		</div>
 	);

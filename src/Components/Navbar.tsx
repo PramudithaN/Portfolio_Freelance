@@ -1,4 +1,3 @@
-// src/Components/Navbar.tsx
 import React from "react";
 import { NavLink } from "react-router-dom";
 
@@ -26,6 +25,14 @@ const Navbar: React.FC = () => {
 						className={({ isActive }) => (isActive ? "active" : "")}
 					>
 						CONTACT
+					</NavLink>
+				</li>
+        <li>
+					<NavLink
+						to="/contact"
+						className={({ isActive }) => (isActive ? "active" : "")}
+					>
+						SKETCH | WORKFLOW
 					</NavLink>
 				</li>
 			</ul>

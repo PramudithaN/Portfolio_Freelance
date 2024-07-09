@@ -135,7 +135,7 @@ body::-webkit-scrollbar-horizontal {
 	gap: 2rem;
 	padding-top: -120px; /* To avoid overlap with the navbar */
 	overflow-y: auto; /* Enable vertical scrolling */
-	padding-bottom: 2rem; /* Add bottom padding to ensure space for scrollbar */
+  padding-bottom: 60px
 }
 
 .card {
@@ -197,7 +197,39 @@ body::-webkit-scrollbar-horizontal {
 		margin-bottom: 1rem; /* Adjust margin or padding between stacked cards */
 	}
 }
+.social-media-icons {
+	position: fixed;
+	bottom: 40px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	gap: 20px;
+}
 
+.social-media-icons a {
+	color: #333;
+	text-decoration: none;
+}
+
+.social-media-icons a:hover {
+	color: #007bff; /* Change color on hover */
+}
+
+.card {
+	/* your existing card styles */
+}
+
+.card-image {
+	/* your existing card image styles */
+}
+
+.card-overlay {
+	/* your existing card overlay styles */
+}
+
+.card-title {
+	/* your existing card title styles */
+}
 /* CONTACT US ----------------------------------------------------------------------------  */
 
 .contact-us-container {
