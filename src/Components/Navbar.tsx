@@ -29,10 +29,10 @@ const Navbar: React.FC = () => {
 				</li>
         <li>
 					<NavLink
-						to="/contact"
+						to="/sketch"
 						className={({ isActive }) => (isActive ? "active" : "")}
 					>
-						SKETCH | WORKFLOW
+						SKETCH
 					</NavLink>
 				</li>
 			</ul>
