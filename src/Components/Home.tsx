@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Spinner from "./Spinner";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faTwitter, faInstagram, faLinkedinIn, faXTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faTwitter, faInstagram, faLinkedinIn, faXTwitter, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Home: React.FC = () => {
 	const navigate = useNavigate();
@@ -53,6 +53,9 @@ const Home: React.FC = () => {
 				</a>
                 <a href="https://www.linkedin.com/in/pramuditha-nadun-612b1b204/" target="_blank" rel="noopener noreferrer">
 					<FontAwesomeIcon icon={faLinkedinIn} size="2x" />
+				</a>
+				<a href="https://github.com/PramudithaN" target="_blank" rel="noopener noreferrer">
+					<FontAwesomeIcon icon={faGithub} size="2x" />
 				</a>
 			</div>
 		</div>
