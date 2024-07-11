@@ -277,7 +277,7 @@ body::-webkit-scrollbar-horizontal {
 
 	.card {
 		width: calc(100% - 1rem); /* Full width with some padding */
-		height: 350px; /* Further adjust the height for smaller screens */
+		height: 280px; /* Further adjust the height for smaller screens */
 		margin-bottom: 1rem;
 	}
 
