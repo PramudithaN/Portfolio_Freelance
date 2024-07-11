@@ -193,7 +193,7 @@ body::-webkit-scrollbar-horizontal {
 }
 
 .card-overlay {
-	position: absolute;
+	position: relative;
 	top: 0;
 	/* left: 0; */
 	width: 100%;
@@ -245,6 +245,31 @@ body::-webkit-scrollbar-horizontal {
 	}
 }
 
+@media (max-width:700px) {
+	.home-container {
+		margin-top: -50px;
+		flex-direction: column;
+		align-items: stretch;
+		gap: 1rem;
+	}
+
+	.card {
+		width: 500px; /* Reduce the width of the card */
+		height: 350px; /* Adjust the height of the card */
+		margin-bottom: 1rem;
+		margin-top: -20px;
+
+	}
+
+	.card-title {
+		font-size: 20px; /* Adjust the font size of the title */
+	}
+
+	.navbar-links {
+		top: 60px; /* Adjust top position if necessary */
+	}
+}
+
 @media (max-width: 480px) {
 	.home-container {
 		padding-top: 20px;
@@ -252,7 +277,7 @@ body::-webkit-scrollbar-horizontal {
 
 	.card {
 		width: calc(100% - 1rem); /* Full width with some padding */
-		height: 150px; /* Further adjust the height for smaller screens */
+		height: 350px; /* Further adjust the height for smaller screens */
 		margin-bottom: 1rem;
 	}
 
