@@ -1,46 +1,123 @@
-# Getting Started with Create React App
+# Portfolio Freelance
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![pnpm](https://img.shields.io/badge/pnpm-F69220?style=for-the-badge&logo=pnpm&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+![FontAwesome](https://img.shields.io/badge/FontAwesome-339AF0?style=for-the-badge&logo=font-awesome&logoColor=white)
 
-## Available Scripts
+> A personal portfolio website showcasing freelance graphic design work, specifically focused on photo manipulations and flyer designs.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 📸 Preview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**Home Page**
+![Home Page](public/Images/Pramuditha%20Nadun.jpg)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---
 
-### `npm test`
+## 📖 About This Project
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This project is a personal portfolio for **Pramuditha Nadun**, a freelance graphic designer. It serves as a visual gallery for high-quality image manipulations and flyer creations. Built with **React** and **TypeScript**, it features a responsive design, smooth navigation via **React Router**, and integrates with **Vercel Blob** for optimized image hosting.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ✨ Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- 🖼️ **Photo Manipulations Gallery** - High-resolution showcase of complex image editing and digital art.
+- 🎨 **Flyer Designs** - Dedicated section for commercial and creative flyer projects.
+- 📱 **Responsive Design** - Fully optimized for mobile, tablet, and desktop viewing.
+- 📬 **Contact System** - Integrated contact form for potential clients to reach out.
+- ⚡ **Optimized Loading** - Uses loading spinners and optimized image delivery for a smooth UX.
+- 🔗 **Social Integration** - Direct links to professional social media profiles.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🛠️ Tech Stack
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+| Layer | Technology |
+|-------|-----------|
+| Framework | [React v18.3.1](https://reactjs.org/) |
+| Language | [TypeScript v4.9.5](https://www.typescriptlang.org/) |
+| Routing | [React Router v6.24.1](https://reactrouter.com/) |
+| Icons | [FontAwesome v6.5.2](https://fontawesome.com/) |
+| Storage | [Vercel Blob](https://vercel.com/docs/storage/vercel-blob) |
+| Package Manager | [pnpm](https://pnpm.io/) |
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 📋 Prerequisites
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- [Node.js](https://nodejs.org/) **v16.18.0 or higher**
+- [pnpm](https://pnpm.io/)
+- [Git](https://git-scm.com/)
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## ⚙️ Getting Started
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/PramudithaN/Portfolio_Freelance.git
+cd Portfolio_Freelance
+```
+
+### 2. Install dependencies
+
+```bash
+pnpm install
+```
+
+### 3. Start the development server
+
+```bash
+pnpm start
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+---
+
+## 📦 Available Scripts
+
+| Command | Description |
+|---------|-------------|
+| `pnpm start` | Runs the app in development mode. |
+| `pnpm build` | Builds the app for production. |
+| `pnpm test` | Launches the test runner. |
+| `pnpm eject` | Ejects from Create React App (use with caution). |
+
+---
+
+## 📁 Project Structure
+
+```
+Portfolio_Freelance/
+├── public/                    # Static assets and index.html
+│   └── Images/                # Local portfolio image assets
+├── src/                       # Main source code
+│   ├── Components/            # Reusable UI components
+│   │   ├── Home.tsx           # Landing page with portfolio categories
+│   │   ├── Manipulations.tsx  # Image manipulation gallery
+│   │   ├── Flyers.tsx         # Flyer design gallery
+│   │   └── ContactUs.tsx      # Contact form component
+│   ├── App.tsx                # Root component and routing
+│   └── index.tsx              # Application entry point
+├── package.json               # Project manifest
+└── tsconfig.json              # TypeScript configuration
+```
+
+---
+
+## 🙋‍♂️ Connect with Me
+
+- **GitHub**: [github.com/PramudithaN](https://github.com/PramudithaN)
+- **LinkedIn**: [linkedin.com/in/pramuditha-nadun-612b1b204](https://linkedin.com/in/pramuditha-nadun-612b1b204)
+- **Email**: pramudithanadun@gmail.com
+- **Instagram**: [instagram.com/prama_psd](https://www.instagram.com/prama_psd)
+
+---
+
+*Developed with ❤️ by Pramuditha Nadun.*
